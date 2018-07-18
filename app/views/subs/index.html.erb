@@ -1,0 +1,10 @@
+<h1>Subs</h1>
+<% @subs.each do |sub| %>
+
+  <a href="<%= sub_url(sub) %>"><%= sub.title %></a><p>by: <%=sub.moderator.username%></p>
+  
+<% end %>
+
+ <a href="<%=new_sub_url%>">Add Sub</a>
+  
+  
